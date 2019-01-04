@@ -1,4 +1,4 @@
-organization in ThisBuild := "se.sisyfosdigital.sbt"
+organization := "se.sisyfosdigital.sbt"
 description in ThisBuild := "Allows eslint to be used from within sbt."
 licenses in ThisBuild += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
 
