@@ -1,4 +1,4 @@
-package com.sc.sbt.eslint
+package se.sisyfosdigital.sbt.eslint
 
 import sbt._
 import sbt.Keys._

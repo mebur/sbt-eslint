@@ -1,1 +1,1 @@
-addSbtPlugin("com.sc.sbt" % "sbt-eslint" % sys.props("project.version"))
+addSbtPlugin("se.sisyfosdigital.sbt" % "sbt-eslint" % sys.props("project.version"))
