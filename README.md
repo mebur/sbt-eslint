@@ -26,7 +26,7 @@ Or locally in your project with a `package.json` file:
 ```json
 {
   "devDependencies": {
-    "eslint": "4.9.0"
+    "eslint": "5.8.0"
   }
 }
 ```
