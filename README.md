@@ -12,11 +12,8 @@ Usage:
 Add dependency to sbt (along with the resolver to BinTray):
 
 ```sbtshell
-libraryDependencies += "com.github.mebur" %% "sbt-eslint" % "1.0.6"
-
-resolvers ++= Seq(
-  "mebur-bintray" at "https://dl.bintray.com/mebur/maven"
-)
+resolvers += Resolver.bintrayIvyRepo("sisyfos-digital", "sbt-plugins")
+addSbtPlugin("se.sisyfosdigital.sbt" % "sbt-eslint" % "1.0.6")
     
 Install eslint, either globally with npm:
 
