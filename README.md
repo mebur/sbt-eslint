@@ -7,13 +7,16 @@ Allows ESLint to be used from within sbt. Builds on com.typesafe:js-engine in or
 along with the scripts to verify. js-engine enables high performance linting given parallelism and native
 JS engine execution.
 
-To use this plugin use the addSbtPlugin command within your project's plugins.sbt (or as a global setting) i.e.:
+Usage:
 
-    addSbtPlugin("se.sisyfosdigital.sbt" % "sbt-eslint" % "1.0.3")
+Add dependency to sbt (along with the resolver to BinTray):
 
-Your project's build file also needs to enable sbt-web plugins. For example with build.sbt:
+```sbtshell
+libraryDependencies += "com.github.mebur" %% "sbt-eslint" % "1.0.6"
 
-    lazy val root = (project in file(".")).enablePlugins(SbtWeb)
+resolvers ++= Seq(
+  "mebur-bintray" at "https://dl.bintray.com/mebur/maven"
+)
     
 Install eslint, either globally with npm:
 
